@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 50%;
+  scroll-behavior: smooth;
+
+  @include md {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding: 0 16px;
+  max-width: 128rem;
+
+  @include md {
+    padding: 0 24px;
+  }
+}
+
+footer {
+  max-width: 110rem;
+}
+
+main,
+footer {
+  width: 100%;
+  // max-width: 120rem;
+  margin: 0 auto;
+}
