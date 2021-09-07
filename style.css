@@ -1,0 +1,261 @@
+/* fontsizes */
+/**
+ * Breakpoint mixins
+ **/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline-color: #ba2222; }
+
+html {
+  font-size: 50%;
+  scroll-behavior: smooth; }
+  @media (min-width: 769px) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #fff; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+input {
+  transform: all 0.5s eaase-in; }
+  input:focus {
+    border: 0.5px solid #ba2222;
+    outline: none; }
+
+main {
+  padding: 0 16px;
+  max-width: 128rem; }
+  @media (min-width: 769px) {
+    main {
+      padding: 0 24px; } }
+
+footer {
+  max-width: 110rem; }
+
+main,
+footer {
+  width: 100%;
+  margin: 0 auto; }
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #828282;
+  line-height: 1.7; }
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.2rem;
+  width: 100%; }
+  @media (max-width: 576px) {
+    header {
+      flex-direction: column;
+      margin-top: 30px; } }
+  header .logo {
+    display: flex;
+    color: #828282; }
+    header .logo img {
+      margin-right: 12px; }
+    header .logo p {
+      font-size: 14px;
+      line-height: 18px;
+      font-size: 14px;
+      white-space: nowrap; }
+  header input {
+    width: 100%;
+    height: 42px;
+    max-width: 500px;
+    text-indent: 20px;
+    margin: 0 20px;
+    display: none;
+    border: 0.5px solid rgba(228, 228, 228, 0.6); }
+    @media (min-width: 769px) {
+      header input {
+        display: unset; } }
+  header ul {
+    display: flex;
+    align-items: center; }
+    header ul li {
+      color: #4d4d4d;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px; }
+      header ul li:not(:last-of-type) {
+        margin-right: 25px; }
+      header ul li a {
+        white-space: nowrap;
+        color: #4d4d4d;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px; }
+        header ul li a:hover {
+          text-decoration: underline; }
+      header ul li:last-of-type {
+        white-space: nowrap; }
+        header ul li:last-of-type button {
+          cursor: pointer;
+          appearance: none;
+          border: none;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+          color: #4d4d4d; }
+
+main {
+  margin: 43px 0; }
+  main form {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      main form {
+        flex-direction: row; } }
+    main form section {
+      width: 100%; }
+      @media (min-width: 768px) {
+        main form section:first-of-type {
+          margin-right: 8rem;
+          flex-direction: row; } }
+      @media (min-width: 768px) {
+        main form section:last-of-type {
+          max-width: 450px;
+          flex-direction: row; } }
+  main h1,
+  main h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    padding: 20px;
+    background-color: #fbfbfb;
+    color: #0a0a0a;
+    margin-bottom: 10px; }
+  main article {
+    padding: 20px;
+    background-color: #fbfbfb;
+    margin-bottom: 10px; }
+  main fieldset {
+    display: flex;
+    flex-direction: column;
+    appearance: none;
+    border: none;
+    margin-bottom: 20px; }
+    main fieldset label {
+      font-size: 15px;
+      line-height: 20px;
+      color: #151522;
+      margin-bottom: 15px; }
+    main fieldset input {
+      height: 50px;
+      text-indent: 20px;
+      border: 0.5px solid rgba(228, 228, 228, 0.6);
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      color: #151522; }
+      main fieldset input::-webkit-input-placeholder {
+        color: #828282;
+        font-size: 14px; }
+      main fieldset input :-ms-input-placeholder {
+        color: #828282; }
+      main fieldset input ::placeholder {
+        color: #828282;
+        font-size: 14px; }
+  main .paymentMethods button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px; }
+  main .cart li {
+    padding: 20px;
+    background-color: #fbfbfb;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    main .cart li img {
+      margin-right: 10px;
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      object-fit: contain; }
+    main .cart li > div h3 {
+      color: #ba2222;
+      font-weight: bold;
+      font-size: 16.5px;
+      line-height: 1.5;
+      margin-bottom: 5px;
+      white-space: nowrap; }
+    main .cart li > div p {
+      color: #0d0d0d;
+      font-size: 16.5px;
+      line-height: 1.5;
+      font-weight: bold; }
+    main .cart li > div > div {
+      margin-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      main .cart li > div > div p {
+        color: #828282;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px; }
+        main .cart li > div > div p:last-of-type {
+          position: relative; }
+          main .cart li > div > div p:last-of-type:after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50px;
+            width: 15px;
+            height: 15px;
+            transform: translateY(-50%);
+            background-color: #0d0d0d; }
+  main .cart article .groupies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px; }
+    main .cart article .groupies:first-of-type {
+      margin-bottom: 20px; }
+    main .cart article .groupies p {
+      font-weight: bold;
+      font-size: 19.5px;
+      line-height: 24px; }
+      main .cart article .groupies p:first-of-type {
+        color: #4f4f4f; }
+      main .cart article .groupies p:last-of-type {
+        color: #0d0d0d; }
+  main .cart .submit-button {
+    height: 66px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    background-color: #ba2222;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; }
+    main .cart .submit-button:hover, main .cart .submit-button:focus {
+      transform: translateY(2px); }
