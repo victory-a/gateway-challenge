@@ -152,6 +152,10 @@ main {
       line-height: 20px;
       color: #151522;
       margin-bottom: 15px;
+
+      span {
+        color: red;
+      }
     }
 
     input {
@@ -197,10 +201,14 @@ main {
 
       img {
         margin-right: 10px;
-        max-width: 150px;
+        max-width: 100px;
         width: 100%;
         height: auto;
         object-fit: contain;
+
+        @include rwd(768) {
+          max-width: 150px;
+        }
       }
 
       & > div {

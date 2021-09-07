@@ -33,21 +33,6 @@ input {
     border: 0.5px solid #ba2222;
     outline: none; }
 
-main {
-  padding: 0 16px;
-  max-width: 128rem; }
-  @media (min-width: 769px) {
-    main {
-      padding: 0 24px; } }
-
-footer {
-  max-width: 110rem; }
-
-main,
-footer {
-  width: 100%;
-  margin: 0 auto; }
-
 body {
   font-weight: 400;
   font-size: 16px;
@@ -163,6 +148,8 @@ main {
       line-height: 20px;
       color: #151522;
       margin-bottom: 15px; }
+      main fieldset label span {
+        color: red; }
     main fieldset input {
       height: 50px;
       text-indent: 20px;
@@ -193,10 +180,13 @@ main {
     justify-content: space-between; }
     main .cart li img {
       margin-right: 10px;
-      max-width: 150px;
+      max-width: 100px;
       width: 100%;
       height: auto;
       object-fit: contain; }
+      @media (min-width: 768px) {
+        main .cart li img {
+          max-width: 150px; } }
     main .cart li > div h3 {
       color: #ba2222;
       font-weight: bold;
