@@ -1,6 +1,6 @@
 # GATEWAY PAYMENT INTEGRATION CHALLENGE
 
-The task is to implement a Squad's payment gateay on this dummy checkout app.
+The task is to implement the payment gateway on this dummy checkout app.
 
 Live URL: [https://gateway-challenge.surge.sh/](https://gateway-challenge.surge.sh/)
 
