@@ -1,4 +1,4 @@
-# SQUAD GATEWAY PAYMENT INTEGRATION CHALLENGE
+# GATEWAY PAYMENT INTEGRATION CHALLENGE
 
 The task is to implement a Squad's payment gateay on this dummy checkout app.
 
